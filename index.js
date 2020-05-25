@@ -10,7 +10,7 @@ if(!config.get('jwtPrivateKey')) {
   process.exit(1);
 }
 
-mongoose.connect('mongodb://localhost/employee', {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(config.get('db'), {useNewUrlParser: true, useUnifiedTopology: true})
   .then(() => console.log('Successfully connected to MongoDB'))
   .catch(err => console.log('Failed to connect MongoDB'));
 

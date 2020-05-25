@@ -1,3 +1,4 @@
 {
-  "jwtPrivateKey": "employee_jwtPrivateKey"
+  "jwtPrivateKey": "employee_jwtPrivateKey",
+  "db": "employee_db"
 }
